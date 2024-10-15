@@ -2,94 +2,139 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Proxima Nova', sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
     background-image: url('assets/coverUp.png'), url('assets/header.png');
     width: 100%;
     height: 100vh;
+    position: relative;
     background-size: cover;
     background-position: center;
+    color: #fff;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 20px 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
 }
 
 .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
     color: #fff;
-    font-size: 24px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    gap: 4vw;
+    margin-right: 8vw;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s;
+    font-weight: 500;
 }
 
 .nav-links a:hover {
     color: #ff6347;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-}
-
-
 .flex-container {
     display: flex;
-    flex-direction: row;
     align-items: center;
-}
-.left {
-    flex: 60%;
-    align-items: end;
-}
-.right {
-    color: white;
-    flex: 40%;
-    align-items: start;
-}
-.kpop {
-    width: 44vw;
+    height: 100vh;
 }
 
-/* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
+.left {
+    flex: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    flex: 45%;
+    text-align: left;
+    max-width: 39rem;
+    padding-right: 10vw;
 }
 
 .title {
+    font-size: 2.8rem;
     margin-bottom: 2rem; 
+    line-height: 1.2;
 }
+
 .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
     font-weight: lighter;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    min-width: 170px;
+}
+
+.getick {
+    background-color: #d92c66;
+}
+
+.getick:hover {
+    background-color: #e0356a;
+}
+
+.learnmore {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.learnmore:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    .right {
+        padding: 0 20px; /* Adjust padding for smaller screens */
+        max-width: 100%;
+    }
+    .kpop {
+        width: 80vw;
+    }
 }
