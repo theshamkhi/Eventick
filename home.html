@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Eventick</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'></head>
 <body>
     <header>
         <!-- Navigation -->
@@ -16,7 +15,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Speakers</a></li>
                 <li><a href="#services">About</a></li>
-                <li><a href="#contact">Login</a></li>
+                <button class="login" href="#contact">Login</button>
             </ul>
         </nav>
 
@@ -33,6 +32,65 @@
                 </div>              
             </div>
         </div>
+
     </header>
+
+    <div class="SearchBox">
+        <div class="Search">
+            <div>
+                <label class="SearchLabel" for="event">Search Event</label>
+                <input class="SearchInput" type="text" name="event" placeholder="Konser Jazz" required>
+            </div>
+            
+            <div>
+                <label class="SearchLabel" for="place">Place</label>
+                <input class="SearchInput" type="text" name="place" placeholder="Indonesia" required>
+            </div>
+            
+            <div>
+                <label class="SearchLabel" for="time">Time</label>
+                <select class="SearchInput" name="time" placeholder="Any Date" required>
+                    <option value="">Any Date</option>
+                    <option value="This Month">This Month</option>
+                    <option value="Next Month">Next Month</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <section>
+        <div class="title2"><h1>Upcoming Events</h1></div>
+
+        <div class="Search2">
+            <div>
+                <select name="time" placeholder="Any Date" required>
+                    <option value="">Any Date</option>
+                    <option value="This Month">This Month</option>
+                    <option value="Next Month">Next Month</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div>
+                <select name="time" placeholder="Any Date" required>
+                    <option value="">Any Date</option>
+                    <option value="This Month">This Month</option>
+                    <option value="Next Month">Next Month</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div>
+                <select name="time" placeholder="Any Date" required>
+                    <option value="">Any Date</option>
+                    <option value="This Month">This Month</option>
+                    <option value="Next Month">Next Month</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+        
+    </section>
 </body>
 </html>
