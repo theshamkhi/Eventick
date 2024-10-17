@@ -264,16 +264,21 @@ main {
 }
 
 .card {
-    background-color: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(119, 115, 170, 0.1);
+    transition: all 0.5s ease; /* Back to normal */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+    transition: all 0.4s ease; /* Transition for the hover effect */
 }
 
 .card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
 }
 
 .card-content {
@@ -364,6 +369,7 @@ main {
     margin: 0 auto;
     margin-bottom: 40px;
 }
+
 .blog > img {
     display: block;
     margin: 6% auto;
@@ -390,6 +396,12 @@ main {
 .BlogCard {
     background-color: transparent;
     overflow: hidden;
+    transition: all 0.5s ease; /* Back to normal */
+    cursor: pointer;
+}
+.BlogCard:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+    transition: all 0.4s ease; /* Transition for the hover effect */
 }
 
 .BlogCard img {
@@ -600,7 +612,15 @@ footer {
     background-position: center;
     background-size: cover;
     margin: 30px 0;
+    transition: all 0.5s ease; /* Back to normal */
+    cursor: pointer;
 }
+
+.Ab1:hover, .Ab2:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+    transition: all 0.4s ease; /* Transition for the hover effect */
+}
+
 .Ab1 {
     background-image: url("assets/Ab1.jpg");
 }
@@ -617,7 +637,6 @@ footer {
 /*========================SPEAKERS============================*/
 
 .Artists {
-    padding: 10%;
     margin: 0 auto;
 }
 
@@ -625,70 +644,54 @@ footer {
     text-align: center;
     color: #242565;
     margin-bottom: 70px;
+    font-size: 3em;
 }
 
 .Trending {
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    grid-template-columns: repeat(3, auto);
     gap: 40px;
-    margin: 0 auto;
+    justify-content: center; /* Centers the grid horizontally */
+    margin-bottom: 60px;
 }
+
 .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9 {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
     text-align: center;
     width: 380px;
     height: 472px;
     border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease; /* Back to normal */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
-.item1 h1, .item2 h1, .item3 h1, .item4 h1, .item5 h1, .item6 h1, .item7 h1, .item8 h1, .item9 h1 {
+.item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover, .item7:hover, .item8:hover, .item9:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.4s ease; /* Transition for the hover effect */
+}
+
+
+.item1 h1, .item2 h1, .item3 h1, .item4 h1, .item5 h1, .item6 h1, .item7 h1, .item8 h1, .item9 h1 {    
     text-align: center;
     color: white;
-    margin: 85% auto;
+    width: 100%;
+    padding: 7px 0;
+    margin-top: 60%;
     text-shadow: 1px 1px 4px rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.6);
 }
-.item1 {
-    background-image: url("assets/eminem.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.item2 {
-    background-image: url("assets/biggie.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.item3 {
-    background-image: url("assets/Cent.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.item4 {
-    background-image: url("assets/Dean.jpeg");
-    background-position: center;
-    background-size: cover;
-}
-.item5 {
-    background-image: url("assets/Arm.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.item6 {
-    background-image: url("assets/Haris.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.item7 {
-    background-image: url("assets/Camille.webp");
-    background-position: center;
-    background-size: cover;
-}
-.item8 {
-    background-image: url("assets/Adele.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.item9 {
-    background-image: url("assets/Hajja.jpg");
-    background-position: center;
-    background-size: cover;
-}
+
+.item1 { background-image: url("assets/eminem.jpg"); }
+.item2 { background-image: url("assets/biggie.jpg"); }
+.item3 { background-image: url("assets/Cent.jpg"); }
+.item4 { background-image: url("assets/Dean.jpeg"); }
+.item5 { background-image: url("assets/Arm.jpg"); }
+.item6 { background-image: url("assets/Haris.jpg"); }
+.item7 { background-image: url("assets/Camille.webp"); }
+.item8 { background-image: url("assets/Adele.jpg"); }
+.item9 { background-image: url("assets/Hajja.jpg"); }
