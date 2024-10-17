@@ -50,7 +50,7 @@
             <div>
                 <label class="SearchLabel" for="time">Time</label>
                 <select class="SearchInput" name="time" placeholder="Any Date" required>
-                    <option value="">Any Date</option>
+                    <option value="" hidden>Any Date</option>
                     <option value="This Month">This Month</option>
                     <option value="Next Month">Next Month</option>
                     <option value="Other">Other</option>
@@ -59,38 +59,156 @@
         </div>
     </div>
     
-    <section>
-        <div class="title2"><h1>Upcoming Events</h1></div>
+    <main>
 
-        <div class="Search2">
-            <div>
-                <select name="time" placeholder="Any Date" required>
-                    <option value="">Any Date</option>
-                    <option value="This Month">This Month</option>
-                    <option value="Next Month">Next Month</option>
-                    <option value="Other">Other</option>
+        <div class="headerEv">
+            <div class="title2"><h1>Upcoming Events</h1></div>
+    
+            <div class="Search2">
+                <select>
+                    <option hidden>Weekdays</option>
+                    <option>Sunday</option>
+                    <option>Wednesday</option>
+                    <option>Saturday</option>
                 </select>
-            </div>
-            
-            <div>
-                <select name="time" placeholder="Any Date" required>
-                    <option value="">Any Date</option>
-                    <option value="This Month">This Month</option>
-                    <option value="Next Month">Next Month</option>
-                    <option value="Other">Other</option>
+    
+                <select>
+                    <option hidden>Event Type</option>
+                    <option>Classical Music</option>
+                    <option>Hip Hop</option>
                 </select>
-            </div>
-            
-            <div>
-                <select name="time" placeholder="Any Date" required>
-                    <option value="">Any Date</option>
-                    <option value="This Month">This Month</option>
-                    <option value="Next Month">Next Month</option>
-                    <option value="Other">Other</option>
+    
+                <select>
+                    <option>Any Category</option>
                 </select>
             </div>
         </div>
-        
+
+        <div class="Events">
+            <div class="card">
+                <img src="assets/1.png" alt="Wonder Girls 2010">
+                <div class="card-content">
+                    <div class="date">
+                        <span class="month">APR</span>
+                        <span class="day">14</span>
+                    </div>
+                    <div class="info">
+                        <h4>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h4>
+                        <p>We’ll get you directly seated and inside for you to enjoy the show.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/2.png" alt="JYJ 2011">
+                <div class="card-content">
+                    <div class="date">
+                        <span class="month">AUG</span>
+                        <span class="day">20</span>
+                    </div>
+                    <div class="info">
+                        <h4>JYJ 2011 JYJ Worldwide Concert Barcelona</h4>
+                        <p>Directly seated and inside for you to enjoy the show.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/3.png" alt="Super Junior 2011">
+                <div class="card-content">
+                    <div class="date">
+                        <span class="month">SEP</span>
+                        <span class="day">18</span>
+                    </div>
+                    <div class="info">
+                        <h4>2011 Super Junior SM Town Live '10 World Tour New York City</h4>
+                        <p>Directly seated and inside for you to enjoy the show.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/4.png" alt="Super Junior 2011">
+                <div class="card-content">
+                    <div class="date">
+                        <span class="month">SEP</span>
+                        <span class="day">18</span>
+                    </div>
+                    <div class="info">
+                        <h4>2011 Super Junior SM Town Live '10 World Tour New York City</h4>
+                        <p>Directly seated and inside for you to enjoy the show.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/5.png" alt="Super Junior 2011">
+                <div class="card-content">
+                    <div class="date">
+                        <span class="month">SEP</span>
+                        <span class="day">18</span>
+                    </div>
+                    <div class="info">
+                        <h4>2011 Super Junior SM Town Live '10 World Tour New York City</h4>
+                        <p>Directly seated and inside for you to enjoy the show.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/6.png" alt="Super Junior 2011">
+                <div class="card-content">
+                    <div class="date">
+                        <span class="month">SEP</span>
+                        <span class="day">18</span>
+                    </div>
+                    <div class="info">
+                        <h4>2011 Super Junior SM Town Live '10 World Tour New York City</h4>
+                        <p>Directly seated and inside for you to enjoy the show.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="loadmore">
+            <button>Load More</button>
+        </div>
+    </main>
+
+    <div class="join">
+        <h1>Join these brands</h1>
+        <p>We've had the pleasure of working with industry-defining brands. These are just some of them.</p>
+    </div>
+
+    <section class="blog">
+        <img src="assets/Group.png">
+        <h1>Blog</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="Blogs">
+            <div class="BlogCard">
+                <img src="assets/7.png" alt="Wonder Girls 2010">
+                <div class="BlogInfo">
+                    <a href="#"><h6>6 Strategies to Find Your Conference Keynote and Other Speakers</h6></a>
+                    <p>12 Mar - Jhon Doe</p>
+                </div>
+            </div>
+            <div class="BlogCard">
+                <img src="assets/8.png" alt="Wonder Girls 2010">
+                <div class="BlogInfo">
+                    <a href="#"><h6>How Successfully Used Paid Marketing to Drive Incremental Ticket Sales</h6></a>
+                    <p>12 Mar - Jhon Doe</p>
+                </div>
+            </div>
+            <div class="BlogCard">
+                <img src="assets/9.png" alt="Wonder Girls 2010">
+                <div class="BlogInfo">
+                    <a href="#"><h6>Introducing Workspaces: Work smarter, not harder with new navigation</h6></a>
+                    <p>12 Mar - Jhon Doe</p>
+                </div>
+            </div>
+           
+        </div>
+
     </section>
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
