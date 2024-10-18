@@ -60,14 +60,16 @@ header {
 
 .flex-container {
     display: flex;
-    align-items: center;
+    align-items: start;
     height: 100vh;
+    padding-top: 5%;
 }
 
 .left {
     flex: 55%;
     display: flex;
     justify-content: center;
+    padding-top: 4%;
 }
 
 .right {
@@ -75,11 +77,12 @@ header {
     text-align: left;
     max-width: 39rem;
     padding-right: 10vw;
+    padding-top: 7%;
 }
 
 .title {
     font-size: 2.8rem;
-    margin-bottom: 2rem; 
+    margin-bottom: 1rem; 
     line-height: 1.2;
 }
 
@@ -158,8 +161,22 @@ header {
         max-width: 100%;
     }
     .kpop {
-        width: 80vw;
+        display: none;
     }
+}
+.kpop {
+    height: 70vh;
+    width: auto;
+}
+
+.Em {
+    height: 80vh;
+    width: auto;
+}
+.leftEm {
+    flex: 55%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -234,6 +251,7 @@ main {
     height: fit-content;
     width: 50%;
 }
+
 .Search2 select {
     color: white;
     font-weight: bold;
@@ -530,9 +548,10 @@ footer {
 
 .leftLog {
     flex: 55%;
-    margin: 70px auto 100px auto; /* Top, Right, Bottom, Left */
+    margin: 0 auto; /* Top, Right, Bottom, Left */
     padding: 20px;
     max-width: 400px;
+    padding-top: 7%;
 }
 .register-form-title {
     color: #fff;
@@ -588,6 +607,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding-top: 3%;
 }
 
 .leftAb {
@@ -597,13 +617,14 @@ footer {
 }
 .leftAb h1 {
     font-size: 3em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .rightAb {
     padding: 40px;
     max-width: 50vw;
     position: relative;
     padding-bottom: 140px;
+    margin-top: 2%;
 }
 .Ab1, .Ab2 {
     width: 500px;
@@ -629,7 +650,7 @@ footer {
 }
 #Abex {
     position: absolute;
-    top: 60%;
+    top: 64%;
     right: 5%;
     max-width: 50vw;
 }
